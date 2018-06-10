@@ -1,10 +1,11 @@
 import Vue from 'vue'
-import BootstrapVue from "bootstrap-vue"
 import App from './App.vue'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap-vue/dist/bootstrap-vue.css"
+import axios from 'axios'
+import moment from 'moment'
 
-Vue.use(BootstrapVue)
+Vue.config.productionTip = false
+Vue.prototype.axios = axios
+Vue.prototype.moment = moment
 
 new Vue({
   el: '#app',
